@@ -3,5 +3,5 @@ services:
     name: chatbot-api
     env: dotnet
     plan: free
-    buildCommand: cd CahtBotApi && dotnet publish -c Release -o ../publish
+    buildCommand: dotnet publish CahtBotApi/CahtBotApi.csproj -c Release -o ./publish
     startCommand: dotnet ./publish/CahtBotApi.dll
