@@ -1,0 +1,33 @@
+# Build results
+bin/
+obj/
+out/
+
+# Visual Studio
+.vs/
+*.user
+*.userosscache
+*.sln.docstates
+
+# Environment files
+.env
+.env.local
+
+# Logs
+*.log
+logs/
+
+# Runtime
+*.dll.config
+*.exe.config
+
+# Temporary files
+*.tmp
+*.temp
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
