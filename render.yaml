@@ -1,9 +1,0 @@
-services:
-  - type: web
-    name: chatbot-api
-    env: dotnet
-    runtime: dotnet-9
-    plan: free
-    buildCommand: dotnet publish CahtBotApi/CahtBotApi.csproj -c Release -o ./publish
-    startCommand: dotnet ./publish/CahtBotApi.dll
-    
