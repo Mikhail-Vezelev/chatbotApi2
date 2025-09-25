@@ -15,7 +15,8 @@ out/
 
 # Logs
 *.log
-logs/
+logs/Get-ChildItem -Force .\CahtBotApi | Where-Object { $_.Name -eq ".git" }
+
 
 # Runtime
 *.dll.config
