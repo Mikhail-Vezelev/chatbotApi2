@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 bin/
 obj/
 .git/
@@ -6,12 +5,3 @@ obj/
 README.md
 Dockerfile
 .dockerignore
-=======
-bin/
-obj/
-.git/
-.gitignore
-README.md
-Dockerfile
-.dockerignore
->>>>>>> 1a41475f5028f11e885300a180dc369f1ff4ecb6
