@@ -5,14 +5,14 @@ FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /app
 
 # Copy the project file and restore dependencies
-COPY CahtBotApi/CahtBotApi.csproj CahtBotApi/
-RUN dotnet restore CahtBotApi/CahtBotApi.csproj
+COPY ["CahtBotApi.csproj", "./"]
+RUN dotnet restore "./CahtBotApi.csproj"
 
 # Copy the rest of the source code
 COPY . .
 
 # Build and publish the application
-RUN dotnet publish CahtBotApi/CahtBotApi.csproj -c Release -o /app/publish
+RUN dotnet publish CahtBotApi.csproj -c Release -o /app/publish
 
 # Use the official .NET 8 runtime image for the final image
 FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS runtime
